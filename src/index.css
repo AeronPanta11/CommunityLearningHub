@@ -1,0 +1,14 @@
+@import "tailwindcss";
+/* top-0 z-40 border-20px-black border-slate-200 bg-white/80 backdrop-blur mt-[-85px] shadow-sm */
+/* .header{
+  position: relative;
+  margin-top: 00px ;
+} */
+ *{
+
+  
+ }
+ .top{
+  position: relative;
+  margin-top: 85px ;
+ }
