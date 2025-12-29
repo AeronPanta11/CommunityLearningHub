@@ -16,12 +16,10 @@ Info / Info Text	blue-400	#60A5FA	Optional informative accents
 
 
 
-<div className="flex items-center gap-5">
-          <button className="text-[15px] font-medium text-gray-700 hover:text-gray-900 cursor-pointer h" onClick={() => navigate('/Auth')}>
-            Sign In
-          </button>
+Plus Jakarta Sans is the primary typeface used throughout the application. It's a modern, geometric sans-serif that offers excellent readability across all screen sizes and maintains a professional yet approachable feel.
 
-          <button className="px-5 py-2 rounded-full bg-gradient-to-r from-emerald-400 to-green-500 hover:text-gray-900 text-white text-[15px] font-semibold cursor-pointer shadow-sm" onClick={() => navigate('/Auth/signup')}>
-            Get Started
-          </button>
-        </div>
+For hero headlines and page titles, use text-5xl to text-6xl with font-extrabold (800 weight) to create strong visual impact. Section headings should use text-2xl to text-3xl with font-bold (700 weight), while card titles and subheadings work best at text-lg to text-xl with font-semibold (600 weight).
+
+Body text and paragraphs should remain at text-base with font-normal (400 weight) for optimal reading comfort. For buttons, labels, and navigation items, use font-medium (500 weight) to provide subtle emphasis without overpowering. Secondary text, captions, and metadata should use text-sm with text-muted-foreground color, while badges and timestamps can go down to text-xs.
+
+Always use semantic color tokens: text-foreground for primary content, text-muted-foreground for secondary information, text-primary for interactive or branded elements, and the text-gradient utility class for decorative headlines that need extra visual punch.

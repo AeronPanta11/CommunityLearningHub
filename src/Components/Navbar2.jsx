@@ -7,7 +7,7 @@ export default function Navbar2() {
   return (
     <nav className="w-full bg-white shadow-sm px-6 py-4 flex items-center justify-between border-b border-gray-200 ">
       {/* Logo */}
-      <span className="text-xl font-bold text-emerald-500 cursor-pointer" onClick={() => navigate("/")}>CommunityLearning Hub</span>
+      <span className="text-xl font-bold text-emerald-500 cursor-pointer" onClick={() => navigate("/home")}>CommunityLearning Hub</span>
 
       {/* Navigation Links */}
       <div className="flex gap-6 font-medium text-slate-500">
@@ -21,7 +21,7 @@ export default function Navbar2() {
         </NavLink>
 
         <NavLink
-          to="/learning"
+          to="/teachlearn/learning"
           className={({ isActive }) =>
             isActive ? "text-emerald-500" : "hover:text-emerald-600"
           }
@@ -30,7 +30,7 @@ export default function Navbar2() {
         </NavLink>
 
         <NavLink
-          to="/teach"
+          to="/teachlearn/teaching"
           className={({ isActive }) =>
             isActive ? "text-emerald-500" : "hover:text-emerald-600"
           }

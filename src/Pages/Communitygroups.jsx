@@ -32,7 +32,7 @@ function GroupCard({ title, category, members }) {
         <p className="text-xs text-slate-500 mt-2">• {members} members</p>
       </div>
 
-      <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded-lg text-sm">
+      <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded-lg text-sm cursor-pointer">
         Join Group
       </button>
     </div>
@@ -59,7 +59,7 @@ export default function CommunityGroups() {
             S
           </div>
           <div>
-            <p className="font-semibold text-slate-900">CommunityLearningHub</p>
+            <p className="font-semibold text-slate-900 cursor-pointer" onClick={() => navigate("/home")}>CommunityLearningHub</p>
             <p className="text-xs text-slate-500">Community Platform</p>
           </div>
         </div>
@@ -117,11 +117,11 @@ export default function CommunityGroups() {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex gap-2 mb-6 cursor-pointer">
           {["All Groups", "My Groups", "Recommended", "Trending"].map((tab) => (
             <button
               key={tab}
-              className="px-4 py-1.5 text-sm rounded-full bg-white border border-slate-200 hover:bg-slate-100"
+              className="px-4 py-1.5 text-sm rounded-full bg-white border border-slate-200 hover:bg-slate-100 cursor-pointer"
             >
               {tab}
             </button>
@@ -129,7 +129,7 @@ export default function CommunityGroups() {
         </div>
 
         {/* Group Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 z-0 ">
           <GroupCard
             title="Web Development Masters"
             category="Programming & Tech"
